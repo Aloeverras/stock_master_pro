@@ -21,7 +21,7 @@
 
 ---
 
-## 🚀 Getting Started / Démarrage
+## 🚀 Getting Started 
 
 ### Prerequisites
 * Docker Desktop installed.
