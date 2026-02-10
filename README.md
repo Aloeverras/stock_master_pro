@@ -8,7 +8,7 @@
 
 ## &#x1F4F1; Microservices
 
-    - 🖥 Frond-tend TypeScript React
-    - &#9749; Back-end Java SpringBoot
-    - 🐍 AI python
-    - 🐘 postgresql database
+- 🖥 Frond-tend TypeScript React
+- &#9749; Back-end Java SpringBoot
+- 🐍 AI python
+- 🐘 postgresql database
