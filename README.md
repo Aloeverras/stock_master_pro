@@ -13,7 +13,7 @@
     - framework : React
     - speciality : Offer a smooth experience and validate that the user does not forget to fill in the product name.
 - &#9749; Back-end 
-    - langage : &#9749 Java 
+    - langage : &#9749; Java 
     - framework : SpringBoot
 - 🐍 AI python
 - 🐘 postgresql database
