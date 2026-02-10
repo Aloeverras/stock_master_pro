@@ -1,25 +1,28 @@
 # stock master pro project.
+### 🎯 Project Goal
+**Stock Master Pro** is a distributed inventory management system designed with a microservices architecture. It automates the creation of physical tracking labels by generating PDF documents with dynamic QR Codes upon product registration.
 
-&#127482;&#127480; english version 
+### 🏗️ Microservices Architecture
+| Service | Technology | Role |
+| :--- | :--- | :--- |
+| **Front-end** | `React` `TypeScript` | Responsive UI & client-side validation. |
+| **Inventory-Service** | `Java` `Spring Boot` | Business logic, JPA persistence, and service orchestration. |
+| **Generator-Service** | `Python` `FastAPI` | Asynchronous PDF generation and QR Code encoding. |
+| **Database** | `PostgreSQL` | Relational data storage for inventory records. |
 
-## &#x1F3AF; The goal of the project
+---
 
-    You are building a smart stock management application. The user registers a product (ex: "External Battery"), and the system instantly generates a PDF label containing a QR Code. This QR Code, once scanned, could redirect to the product page.
+## 🛠 Tech Stack & Tools
 
-## &#x1F4F1; Microservices
+* **Containerization**: Docker & Docker Compose pour l'orchestration multi-conteneurs.
+* **Communication**: Appels API REST synchrones entre les services.
+* **Database**: PostgreSQL pour l'intégrité des données.
+* **Environment**: Chaque service est isolé avec son propre `Dockerfile`.
 
-- ### 🖥 Frond-tend 
-    - langage : TypeScript 
-    - framework : React
-    - speciality : Offer a smooth experience and validate that the user does not forget to fill in the product name.
-- ### &#9749; Back-end 
-    - langage : &#9749; Java 
-    - framework : SpringBoot
-- ### 🐍 AI python
-- ### 🐘 postgresql database
+---
 
-## tools
+## 🚀 Getting Started / Démarrage
 
-- 🐋 docker
-    - dockerfiles
-    - docker-compose yaml
+### Prerequisites
+* Docker Desktop installed.
+* Git.
