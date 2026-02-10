@@ -12,3 +12,7 @@
 - &#9749; Back-end Java SpringBoot
 - 🐍 AI python
 - 🐘 postgresql database
+
+## tools
+
+- 🐋 docker
