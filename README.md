@@ -8,7 +8,10 @@
 
 ## &#x1F4F1; Microservices
 
-- 🖥 Frond-tend TypeScript React
+- 🖥 Frond-tend 
+    - langage : TypeScript 
+    - framework : React
+    - speciality : Offer a smooth experience and validate that the user does not forget to fill in the product name.
 - &#9749; Back-end Java SpringBoot
 - 🐍 AI python
 - 🐘 postgresql database
