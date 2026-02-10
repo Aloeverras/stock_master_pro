@@ -26,3 +26,18 @@
 ### Prerequisites
 * Docker Desktop installed.
 * Git.
+
+## 🇫🇷 Version Française
+
+### 🎯 Objectif du projet
+**Stock Master Pro** est un système de gestion de stock distribué basé sur une architecture microservices. Il automatise la création d'étiquettes de traçabilité physique en générant des documents PDF avec des QR Codes dynamiques lors de l'enregistrement d'un produit.
+
+### 🏗️ Architecture des Microservices
+| Service | Technologie | Rôle |
+| :--- | :--- | :--- |
+| **Front-end** | `React` `TypeScript` | Interface utilisateur responsive et validation client. |
+| **Inventory-Service** | `Java` `Spring Boot` | Logique métier, persistance JPA et orchestration des services. |
+| **Generator-Service** | `Python` `FastAPI` | Génération asynchrone de PDF et encodage de QR Codes. |
+| **Database** | `PostgreSQL` | Stockage relationnel des données d'inventaire. |
+
+---
