@@ -21,6 +21,13 @@
 
 ---
 
+## useful files
+
+* **./docker/Setup.Dockerfile** : the basis of all future docker images of the project.
+* **./docker/Toolchain.Dockerfile** : image for single binary container or packet management, example: nodejs, pyp, etc...
+
+---
+
 ## 🚀 Getting Started 
 
 ### Prerequisites
