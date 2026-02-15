@@ -16,6 +16,9 @@ ARG USERID=1000
 ARG GROUPNAME=staff
 ARG GROUPID=1000
 
+# packages à installer
+ARG PACKAGES=""
+
 # on verrrifie "-eux"
 RUN /bin/sh -c set -eux && \
     apk update 
