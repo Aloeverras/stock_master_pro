@@ -25,7 +25,8 @@ RUN /bin/sh -c set -eux && \
     if [ -z "${PACKAGES}" ]; then \
         echo "empty packages" \
     else \
-        apk add "${PACKAGES}" \    
+        apk add "${PACKAGES}" && \
+        apk upgrade \     
     fi
 
 CMD ["/bin/sh"]
