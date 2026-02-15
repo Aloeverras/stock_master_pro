@@ -16,6 +16,8 @@ ARG USERID=1000
 ARG GROUPNAME=staff
 ARG GROUPID=1000
 
-RUN /bin/sh -c set -eux
+# on verrrifie "-eux"
+RUN /bin/sh -c set -eux && \
+    apk update 
 
 CMD ["/bin/sh"]
