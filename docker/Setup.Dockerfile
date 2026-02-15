@@ -18,6 +18,7 @@ ARG GROUPID=1000
 
 # packages à installer
 ARG PACKAGES=""
+ARG PORT=0000
 
 # on verrrifie "-eux"
 RUN /bin/sh -c set -eux && \
@@ -31,5 +32,7 @@ RUN /bin/sh -c set -eux && \
     apk upgrate && \
     addgroup -g "${GROUPID}" "${GROUPNAME}" && \
     adduser -u ${USERID} -G ${GROUPID} -D ${USERNAME}
+
+EXPOSE ${PORT}    
 
 CMD ["/bin/sh"]
