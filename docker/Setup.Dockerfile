@@ -21,6 +21,11 @@ ARG PACKAGES=""
 
 # on verrrifie "-eux"
 RUN /bin/sh -c set -eux && \
-    apk update 
+    apk update && \
+    if [ -z "${PACKAGES}" ]; then \
+        echo "empty packages" \
+    else \
+        apk add "${PACKAGES}" \    
+    fi
 
 CMD ["/bin/sh"]
