@@ -11,7 +11,7 @@ LABEL org.opencontainers.image.title="stock master"
 LABEL org.opencontainers.image.version="1.0.0.0"
 
 # usetr and group
-ARG USERNAME="aloes"
+ARG USERNAME=aloes
 ARG USERID=1000
 ARG GROUPNAME=staff
 ARG GROUPID=1000
@@ -27,6 +27,8 @@ RUN /bin/sh -c set -eux && \
     else \
         apk add "${PACKAGES}" && \
         apk upgrade \     
-    fi
+    fi && \
+    addgroup -g "${GROUPID}" "${GROUPNAME}" && \
+    adduser -u ${USERID} -G ${GROUPID} -D ${USERNAME}
 
 CMD ["/bin/sh"]
