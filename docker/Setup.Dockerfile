@@ -16,6 +16,6 @@ ARG USERID=1000
 ARG GROUPNAME=staff
 ARG GROUPID=1000
 
-
+RUN /bin/sh -c set -eux
 
 CMD ["/bin/sh"]
