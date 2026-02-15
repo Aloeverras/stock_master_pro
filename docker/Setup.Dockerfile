@@ -28,6 +28,7 @@ RUN /bin/sh -c set -eux && \
         apk add "${PACKAGES}" && \
         apk upgrade \     
     fi && \
+    apk upgrate && \
     addgroup -g "${GROUPID}" "${GROUPNAME}" && \
     adduser -u ${USERID} -G ${GROUPID} -D ${USERNAME}
 
