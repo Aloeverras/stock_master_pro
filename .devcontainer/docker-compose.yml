@@ -2,14 +2,12 @@ services:
   docker_service:
     build:
       context: .
-      dockerfile : Dockerfile
       args:
         PACK : docker
     tty: true  
   docker-compose_service:
     build:
       context: .
-      dockerfile : Dockerfile
       args:
         PACK : docker-compose
     tty: true    
