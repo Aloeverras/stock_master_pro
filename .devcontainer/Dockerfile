@@ -1,5 +1,5 @@
-ARG PACK=docker
 ARG WORKSPACE=/workspace
+ARG PACK=docker
 
 FROM alpine:3.23.3 AS builder
 ARG PACK
