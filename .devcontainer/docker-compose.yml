@@ -1,13 +1,15 @@
 services:
-  test_devcontainer:
+  docker_service:
     build:
       context: .
       dockerfile : Dockerfile
+      args:
+        PACK : docker
     tty: true  
-  test_docker:
-    image : alpine:3.23.3
-    command: apk update && apk search -v docker
-
-  test_git:
-    image : alpine:3.23.3
-    command: apk update && apk search -v git 
+  docker-compose_service:
+    build:
+      context: .
+      dockerfile : Dockerfile
+      args:
+        PACK : docker-compose
+    tty: true    
