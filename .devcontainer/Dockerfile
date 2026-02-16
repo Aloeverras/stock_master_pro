@@ -2,7 +2,9 @@ ARG PACK=docker
 
 FROM alpine:3.23.3 AS builder
 ARG PACK
-RUN apk update && apk add "$PACK" && apk upgrade
+RUN apk update 
+RUN apk add "$PACK" 
+RUN apk upgrade
 
 FROM alpine:3.23.3
 ARG PACK
