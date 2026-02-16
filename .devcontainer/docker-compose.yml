@@ -1,0 +1,8 @@
+services:
+  test_docker:
+    image : alpine:3.23.3
+    command: apk update && apk search -v docker
+
+  test_git:
+    image : alpine:3.23.3
+    command: apk update && apk search -v git 
