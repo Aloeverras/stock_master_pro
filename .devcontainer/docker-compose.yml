@@ -1,4 +1,9 @@
 services:
+  test_devcontainer:
+    build:
+      context: .
+      dockerfile : Dockerfile
+    tty: true  
   test_docker:
     image : alpine:3.23.3
     command: apk update && apk search -v docker
